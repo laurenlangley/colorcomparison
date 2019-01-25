@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Color Comparison</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  </head>
+  <body>
+    <h1>SalesLoft Color Ordering</h1>
+    <!-- <div class="container">
+        <div id="swatchesAll"></div>
+    </div> -->
+    <div class="container">
+        <div id="swatchesReds"></div>
+        <div id="swatchesIndigo"></div>
+        <div id="swatchesBlue"></div>
+        <div id="swatchesTeal"></div>
+        <div id="swatchesGreens"></div>
+        <div id="swatchesOrange"></div>
+        <div id="swatchesGrey"></div>
+        <div id="swatchesBlueGrey"></div>
+        <div id="swatchesOther"></div>
+    </div>
+    <!-- <div class="container">
+        <div id="swatchesReducedPalette"></div>
+        <div id="swatchesWarm"></div>
+        <div id="swatchesReds"></div>
+        <div id="swatchesPrince"></div>
+        <div id="swatchesPurple"></div>
+        <div id="swatchesIndigo"></div>
+        <div id="swatchesCool"></div>
+        <div id="swatchesBlue"></div>
+        <div id="swatchesTeal"></div>
+        <div id="swatchesAqua"></div>
+        <div id="swatchesGreens"></div>
+        <div id="swatchesYellows"></div>
+        <div id="swatchesBurnt"></div>
+        <div id="swatchesOrange"></div>
+        <div id="swatchesGrey"></div>
+        <div id="swatchesBlueGrey"></div>
+        <div id="swatchesOther"></div>
+    </div> -->
+    <script id="color-template" type="text/x-handlebars-template">
+      <table>
+        <tbody>
+            {{#colorData}}
+            <tr>
+                <td class="swatch" style="background: {{hex}}">
+                  <div class="details">
+                    <div class="name">{{name}}</div>
+                    <div class="values">
+                      <span class="rgb">{{rgbconvert}}</span>
+                      <span class="hex">{{hex}}</span>
+                    </div>
+                  </div>
+                </td>
+            </tr>
+            {{/colorData}}
+        </tbody>
+    </table>
+    </script>
+  </body>
+  <!-- <script src="colors.json"></script> -->
+  <!-- <script src="colors-slim.json"></script> -->
+  <!-- <script src="colors-sorted.json"></script> -->
+  <script src="colors-translate.json"></script>
+  <!-- <script src="colors-proposed.json"></script> -->
+  <script src="main.js"></script>
+</html>

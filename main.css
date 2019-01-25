@@ -1,0 +1,86 @@
+html, h1 {
+font-family: 'Proxima Nova', Helvetica, sans-serif;
+font-weight: 400;
+}
+body {
+  font:16px 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #4f5359;
+}
+h1 {
+  font-size: 24px;
+}
+table {
+  border: 0;
+  border-spacing: 0;
+}
+thead {
+  font-family: 'Proxima Nova', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+th, td {
+  padding: 0 8px;
+  border: 0;
+  width: 120px;
+  /* height: 64px; */
+  height: 24px;
+  vertical-align: center;
+}
+th {
+  height: 48px;
+  background: #f5f7f8;
+}
+tr {
+  width: 360px;
+}
+thead tr td:first-of-type,
+tbody tr td:first-of-type {
+  padding: 0;
+}
+tr:nth-child(odd) {
+  background: #e5e5e5;
+}
+.container {
+  overflow: hidden;
+}
+.yui3-datatable-header {
+  font-weight: 600;
+  cursor: default;
+}
+.yui3-datatable-header th {
+  cursor: pointer;
+}
+.yui3-datatable-header .yui3-datatable-sort-liner {
+  color: #337ab7;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.swatch {
+  padding: 0;
+  width: 300px;
+  /* height: 64px; */
+  height: 24px;
+}
+.swatch::before {
+  /* content: "test"; */
+}
+.details {
+  padding: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.values {
+  margin-top: 4px;
+}
+.name {
+  width: 320px;
+  font-weight: 600;
+}
+.hex {
+  float: right;
+}
+.rgb {
+
+}
